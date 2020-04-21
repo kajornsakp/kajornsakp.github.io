@@ -13,10 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build the site in the jekyll/builder container
-      env:
-        MEDIUM_USERNAME: kajornsakp
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+    
+    - name: set medium env
+      uses: allenevans/set-env@v1.0.0
+      with:
+        MEDIUM_USERNAME: 'kajornsakp'
+        
+    - name: Build & Deploy Jekyll
+      uses: helaili/jekyll-action@2.0.0

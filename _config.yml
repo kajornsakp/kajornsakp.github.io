@@ -1,6 +1,6 @@
 # main text of home
-name: John Doe
-bio: A Man who travels the world eating noodles
+name: Kajornsak Peerapathananont
+bio: B.Eng Software Engineering, KMITL, Thailand. Love in learning new technologies. Huge interested in Mobile applications development, Flutter, IoT and UX/UI. Currently, Mobile developer at Agoda.
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -13,44 +13,44 @@ picture: assets/images/profile.jpg
 # If you want to include your resume, set to true
 # and specify source (external or local).
 resume: true
-resume-external: true
-resume-url: https://google.com/?q=my+resume
+resume-external: false
+resume-url: assets/resume/kajornsak-peerapathananont.pdf
 
-url: https://koppl.in/indigo
+url: https://kajornsakp.github.io
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
 
 # To enable google analytics, supply your token below
-# analytics-google: 'UA-MYANALYTICS'
+analytics-google: 'UA-117660880-1'
 
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
 # analytics-piwik-id: 1
 
 # if you don't want comments in your posts, leave categories empty
-disqus:
-  shortname: mydisqus # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+# disqus:
+#   shortname: mydisqus # enter this from your disqus account
+#   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
+facebook: kajornsakp
+twitter: kajornsak_pp
 # instagram: myinstagram
 # pinterest: mypinterest
 # linkedin: mylinkedin
 # youtube: myyoutube
 # spotify: myspotify
-github: mygithub
+github: kajornsakp
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-medium: medium
+medium: kajornsakp
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: myemail@gmail.com
+email: kajornsak.pr@gmail.com
 
 authors:
   johndoe:
@@ -80,7 +80,7 @@ pagination:
   permalink: "/:num/" # pagination link that will be appended
 
 # if you don't need projects, comment the *projects* configs below
-projects: true
+projects: false
 
 # if you don't need "about" or "blog", comment them out below
 about: true
@@ -121,6 +121,9 @@ plugins:
   - jemoji
   - jekyll-admin
   - jekyll-paginate-v2
+
+collections:
+  - medium_posts
 
 jekyll-mentions:
   base_url: https://github.com
